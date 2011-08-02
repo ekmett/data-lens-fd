@@ -1,6 +1,6 @@
 name:          data-lens-fd
 category:      Control, Comonads
-version:       1.8.0.2
+version:       1.8.0.3
 license:       BSD3
 cabal-version: >= 1.6
 license-file:  LICENSE
@@ -24,10 +24,8 @@ flag DeriveDataTypeable
 library
   build-depends: 
     base >= 4 && < 5,
-    transformers >= 0.2 && < 0.3,
     mtl >= 2.0.1.0 && <= 2.1,
-    semigroups >= 0.5 && < 0.6,
-    comonad >= 1.1 && < 1.2,
+    transformers >= 0.2 && < 0.3,
     data-lens >= 1.8 && < 1.9,
     comonad-transformers >= 1.8 && < 1.9
 
