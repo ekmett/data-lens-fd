@@ -11,12 +11,14 @@ module Data.Lens
   , (//=), (!/=)   -- modify -- :: (MonadState a m, Fractional b) => Lens a b -> b -> m b
   , (&&=), (!&&=)  -- modify -- :: MonadState a m => Lens a Bool -> Bool -> m Bool
   , (||=), (!||=)  -- modify -- :: MonadState a m => Lens a Bool -> Bool -> m Bool
+  , focus
   ) where
 
 import Control.Comonad.Trans.Store
 import Control.Monad.State
 import Data.Functor.Identity
 import Data.Lens.Common
+import Data.Lens.Lazy (focus)
 
 -- * State actions
 
